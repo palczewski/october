@@ -1,0 +1,10 @@
+<script type="text/cms-component-config">
+  {
+    "title": "Breadcrumbs",
+    "target": "page",
+  }
+</script>
+
+<div jsh-for-item="sitemap.currentItem" class="bcrumbs">
+  <a jsh-foreach-item="sitemap.breadcrumbs" jsh-foreach-item-separator=" / " href="<%~(!item.selected && item.href)%>" onclick="<%~item.onclick%>" target="<%~item.target%>"><span class="<%~iif(item.selected,'bcrumbs_curr')%>"><%-item.html%></span></a>
+</div>
