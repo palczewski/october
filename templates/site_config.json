@@ -5,5 +5,8 @@
   ],
   "defaultEditorConfig": {
     "materialIcons": true
+  },
+  "deployment_target_params": {
+    "BASE_HREF": "/"
   }
 }
